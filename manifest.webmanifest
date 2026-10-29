@@ -1,0 +1,29 @@
+{
+  "id": "/",
+  "name": "Riaan's Garage Doors Repairs",
+  "short_name": "Riaan's Garage",
+  "description": "Garage door repairs, installation, maintenance and 24/7 emergency enquiries.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1c232b",
+  "theme_color": "#1c232b",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Services",
+      "url": "/services.html"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact.html"
+    }
+  ]
+}
