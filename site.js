@@ -41,7 +41,7 @@ const NAV=[["Home","index.html"],["About","about.html"],["Services","services.ht
 const page=(location.pathname.split("/").pop()||"index.html").replace(".html","");
 function escapeHTML(x){return String(x==null?"":x).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function wa(message){return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(message)}
-function brand(){return '<span class="logo">'+LOGO+'<span class="brandtext">RIAAN’S<small>GARAGE DOORS REPAIRS</small></span></span>'}
+function brand(){return '<span class="logo"><img src="/riaans-logo.svg" width="240" height="80" alt="Riaan’s Garage Doors Repairs logo"></span>'}
 function header(){
 return '<div class="topline"><div class="wrap"><span>FAST • RELIABLE • PROFESSIONAL REPAIRS</span><span>Emergency enquiries • 24/7</span><a href="tel:+27607726248">CALL '+DISPLAY+'</a></div></div>'+
 '<header class="header"><div class="wrap navrow"><a href="index.html" aria-label="Riaan’s Garage Doors Repairs home">'+brand()+'</a><button id="menuToggle" class="menubtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button><nav id="navLinks" class="navlinks" aria-label="Main menu">'+NAV.map(function(n){return '<a href="'+n[1]+'"'+(page===n[1].replace(".html","")?' class="current" aria-current="page"':"")+'>'+n[0]+'</a>'}).join("")+'<a class="navcta" href="tel:+27607726248">CALL US ↗</a></nav></div></header><div id="scrollProgress" class="scrollbar"></div>';
